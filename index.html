@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Sukhinderpal Mann</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar" class="active">
+        <div class="sidebar-header">
+          <h3>Topics</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#intro" onclick="sideBar()">Introduction</a>
+          </li>
+          <li>
+            <a href="#quest1" onclick="sideBar()">The Top Tier</a>
+          </li>
+          <li>
+            <a href="#quest2" onclick="sideBar()">The Best Against The Rest</a>
+          </li>
+          <li>
+            <a href="#quest3" onclick="sideBar()">The Best Under Pressure</a>
+          </li>
+          <li>
+            <a href="#quest4" onclick="sideBar()">Who Dictated The Pace?</a>
+          </li>
+          <li>
+            <a href="#quest5" onclick="sideBar()">Big money</a>
+          </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+          <li>
+            <a href="https://github.com/S-Mann" class="download">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button
+                type="button"
+                id="sidebarCollapse"
+                class="btn btn-info navbar-btn"
+              >
+                <i class="glyphicon glyphicon-align-left"></i>
+              </button>
+            </div>
+
+            <div class="text-center">
+              <h3>
+                The Improbable Story
+              </h3>
+            </div>
+          </div>
+        </nav>
+
+        <h2>Introduction</h2>
+        <div id="intro">
+          <p>
+            In the season of 2015-2016 two of the greatest records were broken.
+            Golden State Warriors <b>GSW</b> set a regular season record of
+            <b><i>73-9</i></b> which means they
+            <u>just lost 9 times in the whole season.</u> Which is by far the
+            most impressive accomplishment in NBA. With a record so good
+            everyone had <b>GSW</b> as the NBA champion even before the playoffs
+            started. What happened next was one of the rarest event in
+            professional sports in all of North America. The Cleveland Cavaliers
+            <b>CLE</b> were down in the NBA finals <b><i>3-1</i></b> to
+            <b>GSW</b>,
+            <u><b>GSW</b> just had to win one match to close the series</u> and
+            become champions. But <b>GSW</b> went down with the biggest upset in
+            professional sports,
+            <u
+              ><b>GSW</b> lost 3 straight games making <b>CLE</b> the
+              champions.</u
+            >
+          </p>
+        </div>
+        <div class="line"></div>
+
+        <h2>The Top Tier</h2>
+        <div class="row" id="quest1">
+          <div class="col-sm-3">
+            <p>
+              After the completion of the regular season, the top 4 teams with
+              the highest chances of winning the championship was Cleveland
+              Cavaliers <b>CLE</b>, Toronto Raptors <b>TOR</b>, Golden State
+              Warriors <b>GSW</b> and San Antonio Spurs <b>SAS</b>. As usual the
+              West is usually the stronger conference amongst East and West. We
+              have
+              <u
+                ><b>GSW</b> and <b>SAS</b> which had the highest chances of
+                winning the championship and were from the West</u
+              >. Both the
+              <u
+                >teams from the East had a very low chance of winning the
+                championship.</u
+              >
+            </p>
+          </div>
+          <div class="col-sm-9">
+            <canvas id="myChart3" width="width" height="height"></canvas>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h2>The Best Against The Rest</h2>
+        <div class="row" id="quest2">
+          <div class="col-sm-9">
+            <canvas id="myChart2" width="width" height="height"></canvas>
+          </div>
+          <div class="col-sm-3">
+            <p>
+              When all was said and done the finals was between the
+              <b>GSW</b> and <b>CLE</b>. In this bar graph
+              <u
+                >we can see how the teams compared to their opponents in the
+                regular season.</u
+              >
+              The graph shows a clear point difference of <b>+10</b> on average
+              for <b>GSW</b> and <b>+6</b> for <b>CLE</b>. Maintianing a
+              <b>+10</b> point difference in the west is really an achievement.
+            </p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h2>The Best Under Pressure</h2>
+        <div class="row" id="quest3">
+          <div class="col-sm-3">
+            <p>
+              When
+              <u
+                >we compare the performance of <b>GSW</b> and <b>CLE</b> in the
+                finals to their regular season</u
+              >, we see that
+              <u
+                ><b>GSW</b> completely choked and went from 114 points on
+                average to 99 points per game,</u
+              >
+              <b>CLE</b> also had a drop off but it isn't as drastic as that of
+              <b>GSW</b>.
+            </p>
+          </div>
+          <div class="col-sm-9">
+            <canvas id="myChart" width="width" height="height"></canvas>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h2>Who Dictated The Pace?</h2>
+        <div class="row" id="quest4">
+          <div class="col-sm-9">
+            <canvas id="myChart1" width="width" height="height"></canvas>
+          </div>
+          <div class="col-sm-3">
+            <p>
+              In this graph we can see that in reality <b>CLE</b> didn't play
+              better than their regular season. In reality <b>GSW</b> really
+              slowed down and their stats across the board dropped drastically.
+              <u
+                ><b>CLE</b> pretty much played their game at their pace and
+                brought <b>GSW</b> to their level.</u
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <h2>Big money</h2>
+        <div class="row" id="quest5">
+          <div class="col-sm-3">
+            <p>
+              Being the underdogs <b>CLE</b> had all odds against them. While
+              all the predictions said <b>GSW</b> would win the championship the
+              result differed and <b>CLE</b> won at last. Maybe a reference to
+              <u>The Chaos Theory.</u> To give you a better understanding when
+              <u
+                ><b>GSW</b> was up <b>3-1</b> in the series the chances of them
+                winning was <b>94.1%</b> if you would have bet <b>10,000</b> on
+                <b>CLE</b> winning the series<b>(before game 5)</b>, you would
+                have made <b>120,000.</b></u
+              >
+              No team in the professional sport has ever comeback from down
+              <b>3-1</b>, only <b>CLE</b> has done it, in many ways thanks to
+              <u><b>LeBron James.</b></u>
+            </p>
+          </div>
+          <div class="col-sm-9">
+            <canvas id="myChart4" width="width" height="height"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebarCollapse").on("click", sideBar);
+      });
+
+      function sideBar() {
+        $("#sidebar").toggleClass("active");
+      }
+    </script>
+
+    <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="chart_js_backend.js"></script>
+  </body>
+</html>
