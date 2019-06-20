@@ -18,8 +18,6 @@ class CustomChart {
 }
 
 const init = async () => {
-  // rgb(200,15,46) nba red
-  // rgb(29,66,137) nba blue
   const ctx = document.getElementById("myChart");
   const ctx1 = document.getElementById("myChart1");
   const ctx2 = document.getElementById("myChart2");
