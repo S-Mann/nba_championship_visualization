@@ -201,16 +201,6 @@ const init = async () => {
     }
   };
 
-  // GSW Winning chances before games:
-  // 68.8
-  // 66.7
-  // 77.8
-  // 88.2 if you would have bet that cleveland would win at this point you would get 10x returns.. so betting 100k would get you a million.
-  // 77.8
-  // 94.1
-  // 81.8
-  // 63
-
   // CLE bets win before game 1
   // 180, 2.8
   // 320, 4.2
