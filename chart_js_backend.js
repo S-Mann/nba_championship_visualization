@@ -18,8 +18,6 @@ class CustomChart {
 }
 
 const init = async () => {
-  // rgb(200,15,46) nba red
-  // rgb(29,66,137) nba blue
   const ctx = document.getElementById("myChart");
   const ctx1 = document.getElementById("myChart1");
   const ctx2 = document.getElementById("myChart2");
@@ -203,33 +201,8 @@ const init = async () => {
     }
   };
 
-  // GSW Winning chances before games:
-  // 68.8
-  // 66.7
-  // 77.8
-  // 88.2 if you would have bet that cleveland would win at this point you would get 10x returns.. so betting 100k would get you a million.
-  // 77.8
-  // 94.1
-  // 81.8
-  // 63
-
-  // CLE bets win before game 1
-  // 180, 2.8
-  // 320, 4.2
-  // 650, 7.5
-  // 400, 5
-  // 1100, 12
-  // 375, 4.75
-  // 185, 2.85
-
   GSW_WINNING_PCT = [68.8, 66.7, 77.8, 88.2, 94.1, 81.8, 63];
   CLE_BET_MULTI = [2.8, 4.2, 5, 7.5, 12, 4.75, 2.85];
-
-  // chances of winning
-  // CLE, CHL, GSW, SA
-  // 12.74+3.38+48.08+35.89
-
-  // https://jsfiddle.net/qLhojncy/ continous animation in chart js
 
   var myChart1 = new CustomChart(ctx1, {
     type: "radar",
@@ -363,7 +336,7 @@ const init = async () => {
       scales: {
         yAxes: [
           {
-            type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            type: "linear", 
             display: true,
             position: "left",
             id: "y-axis-1",
@@ -373,14 +346,13 @@ const init = async () => {
             }
           },
           {
-            type: "linear", // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            type: "linear", 
             display: true,
             position: "right",
             id: "y-axis-2",
 
-            // grid line settings
             gridLines: {
-              drawOnChartArea: false // only want the grid lines for one axis to show up
+              drawOnChartArea: false
             },
             scaleLabel: {
               labelString: "GSW Winning Chance(%)",
