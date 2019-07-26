@@ -52,10 +52,14 @@ const init = async () => {
     return await dfjs.DataFrame.fromCSV(csv_path);
   };
 
-  DATASET = await load_data_func("nba-games-stats-15-16.csv");
-  FINALS_DATASET = await load_data_func("nba-finals-stats-15-16.csv");
+  DATASET = await load_data_func(
+    "https://raw.githubusercontent.com/S-Mann/data_visualization_asg1/master/nba-games-stats-15-16.csv"
+  );
+  FINALS_DATASET = await load_data_func(
+    "https://raw.githubusercontent.com/S-Mann/data_visualization_asg1/master/nba-finals-stats-15-16.csv"
+  );
   FINALS_GAMEWISE_DATASET = await load_data_func(
-    "nba-finals-gamewise-stats-15-16.csv"
+    "https://raw.githubusercontent.com/S-Mann/data_visualization_asg1/master/nba-finals-gamewise-stats-15-16.csv"
   );
 
   FINALS_AVG_POINTS.push(FINALS_DATASET.select("TeamPoints").toArray()[0]);
@@ -336,7 +340,7 @@ const init = async () => {
       scales: {
         yAxes: [
           {
-            type: "linear", 
+            type: "linear",
             display: true,
             position: "left",
             id: "y-axis-1",
@@ -346,7 +350,7 @@ const init = async () => {
             }
           },
           {
-            type: "linear", 
+            type: "linear",
             display: true,
             position: "right",
             id: "y-axis-2",
